@@ -1,7 +1,7 @@
 # How it's made
 
 ## How the how it's made package is made
-This package recursively generates a title for the show "How It's Made" for n iterations. It can be run from a terminal, in which case it will also read the title allowed.
+This package recursively generates a title for the show "How It's Made" for n iterations. It can be run from a terminal, in which case it will also read the title aloud.
 
   ![cropped-700bd0ce-3f1c-4cd3-a2f2-2931567a425a-HowItsMade_S26_Episode16-740x416](https://user-images.githubusercontent.com/62618224/163507083-e4f994f4-08d3-45a8-ba81-1437ef04e772.jpg)
 
