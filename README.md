@@ -1,30 +1,31 @@
 # How it's made
 
 ## How the how it's made package is made
-This package recursively generates a title for the show "How It's Made" for n iterations. It can be run from a terminal, in which case it will also read the title allowed.
+This package recursively generates a title for the show "How It's Made" for n iterations. It can be run from a terminal, in which case it will also read the title ~~allowed~~ aloud (_updated for version 1.1_).
 
   ![cropped-700bd0ce-3f1c-4cd3-a2f2-2931567a425a-HowItsMade_S26_Episode16-740x416](https://user-images.githubusercontent.com/62618224/163507083-e4f994f4-08d3-45a8-ba81-1437ef04e772.jpg)
 
-## Requirements
+## Installation
 
-How it's made requires two packages, gTTS and pyttsx3, which can be installed using:
+How it's made has two requirements, gTTS and pyttsx3, and can be installed using:
 
 ```bash
-pip3 install gTTS pyttsx3
+pip install how-its-made
 ```
-## Example
-The command below will print, and then read aloud "How It's Made."
-```bash
-python3 how_its_made.py 1
-```
-The module can also be called within code, where the depth and the "it" can be customised.
+## Usage
 
 ```python
-how = how_its_made(3, "a chair")
+import how_its_made as him
 
-# This will print "How How How A Chair's Made Is Made Is Made"
+# This will print "How It's Made"
+how = him.how_its_made()
 print(how.title)
 
-# This will then create a 'how_its_made.mp3' file using Google's Text to Speech package
+# This will print "How How How A Chair's Made Is Made Is Made"
+how = him.how_its_made(3, "a chair")
+print(how.title)
+
+# This will read aloud "How How How A Chair's Made Is Made Is Made"
 how.text_to_speech(delete_sound_file=True)
+
 ```
